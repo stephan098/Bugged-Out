@@ -1,0 +1,138 @@
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Navigationbar style */
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F1E9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+}
+#icon {
+  height: 45px;
+  margin-left: 7px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+
+}
+
+ul li a {
+  display: block;
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+ul li a:hover {
+  background-color: #B1D182;
+  color: white;
+  border-radius: 9px;
+}
+.active{
+  background-color: #688F4E;
+  color: white;
+  border-radius: 9px;
+}
+/*===========================================================================================================*/
+/*Style dropdown*/
+.dropdown {
+  position: relative;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #F4F1E9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4F1E9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  left: auto;
+  text-align: center;
+}
+
+.dropdown-content .active{
+  background-color: #688F4E;
+  color: white;
+}
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #B1D182;
+  color: white;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #F4F1E9;
+}
+/*===========================================================================================================*/
+/*Style the Bug creation page*/
+.formLeft{
+  float: left;
+  width: 50%;
+
+}
+.formRight{
+  float: right;
+  width: 50%;
+}
+.formLast{
+  clear: both;
+  float: center;
+}
+form{
+  margin: 20px 20%;
+  padding: 30px;
+  width: 60%;
+  background-color: #F4F1E9;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.2);
+}
+form h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  color: #688F4E;
+
+}
+/*===========================================================================================================*/

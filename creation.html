@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Create Ticket</title>
+</head>
+<body>
+    <nav>
+        <img src="./Images/Icon.png" alt="Bugged Out" id="icon" >
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="creation.html" class="active">Create Bug</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+
+            <div class="dropdown">
+                <button class="dropbtn"><img src="./Images/menu.png" alt="More Options" height="22px"></button>
+                <div class="dropdown-content">
+                    <a href="assignment.html">Assign Bug</a></li>
+                    <a href="detailed.html">Bug Details</a></li>
+                    <a href="update.html">Update Bug</a></li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <form>
+        <h1>Create a bug</h1>
+        <!-- Summary of the issue that was discovered
+        • Detailed description of the issue
+        • Who identified the issue
+        • The date on which the issue was identified
+        • Which project the issue is related to
+        • Who the issue is assigned to
+        • A status of the issue [open/ resolved/ overdue] -->
+
+        <div class="formLeft">
+           <br>
+            <label for="fidentifier">Identifier of issue:</label> <br>
+            <input type="text" id="fidentifier" name="fidentifier" size="45"> <br><br>
+
+            <label for="fproject">Project related to:</label> <br>
+            <input type="text" id="fproject" name="fproject" size="45"> <br><br>
+
+            <label for="fassignee">Issue is assigned to:</label> <br>
+            <input type="text" id="fassignee" name="fassignee" size="45"> <br><br>
+
+            <label for="fresdate">Target resolution date:</label> <br>
+            <input type="date" id="fresdate" name="fresdate"> <br><br>
+
+            <label for="factualdate">Actual resolution date:</label> <br>
+            <input type="date" id="factualdate" name="factualdate"> <br><br>
+
+        </div>
+        
+        <div class="formRight">
+            <label for="fdate">Date of issue identification:</label> <br>
+            <input type="date" id="fdate" name="fdate"> <br><br>
+
+            <label for="fstatus">Issue status:</label> <br>
+            <input type="checkbox" id="fsOpen" name="fsOpen">  <label for="fsOpen">Open</label> <br>
+            <input type="checkbox" id="fsResolved" name="fsResolved">  <label for="fsResolved">Resolved</label> <br>
+            <input type="checkbox" id="fsOverdue" name="fsOverdue">  <label for="fsOverdue">Overdue</label> <br><br>
+
+            <label for="fPriority">Issue Priority:</label> <br>
+            <input type="checkbox" id="fsLow" name="fsLow">  <label for="fsLow">Low</label> <br>
+            <input type="checkbox" id="fsMedium" name="fsMedium">  <label for="fsMedium">Medium</label> <br>
+            <input type="checkbox" id="fsHigh" name="fsHigh">  <label for="fsHigh">High</label> <br>
+        </div>
+
+        <div class="formLast">
+            <label for="fsummary">Summary of issue:</label> <br>
+            <textarea name="fsummary" id="fsummary" cols="100" rows="20"></textarea> <br><br>
+
+            <label for="fdiscription">Discription of issue:</label> <br>
+            <textarea name="fdiscription" id="fdiscription" cols="100" rows="10"></textarea> <br><br>
+
+            <label for="fressummary">Resolution Summary:</label> <br>
+            <textarea name="fressummary" id="fressummary" cols="100" rows="20"></textarea> <br><br>
+        </div>
+
+
+    </form>
+</body>
+</html>
